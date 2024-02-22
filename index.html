@@ -37,7 +37,7 @@
     <!-- <div class="wrapper"> -->
     <!------------------------Header------------------ -->
     <header class="header">
-        <div class="menu-close"></div>
+      <div class="menu-close"></div>
       <div class="container">
         <div class="header__inner">
           <a
@@ -46,10 +46,11 @@
             >Relvise</a
           >
           <nav class="header__nav">
+            <div class="mobile-menu-close menu">
+              <button class="menu__close-btn">X</button>
+            </div>
+
             <ul class="header__nav-list is-open">
-              <li class="mobile-menu-close menu">
-                <button class="menu__close-btn">X</button>
-              </li>
               <li class="header__nav-item">
                 <a
                   class="header__nav-link"
@@ -93,7 +94,7 @@
     </header>
     <!------------------------/Header------------------ -->
     <main class="main">
-        <!-- -----------------Hero---------------------- -->
+      <!-- -----------------Hero---------------------- -->
       <section class="hero">
         <div class="container">
           <div class="hero-inner">
@@ -120,49 +121,263 @@
           </div>
         </div>
         <div class="hero__bg">
-            <img class="hero__bg-img" src="./images/hero.jpg">
+          <img
+            class="hero__bg-img"
+            src="./images/hero.jpg"
+          />
         </div>
       </section>
-        <!-- -----------------/Hero---------------------- -->
+      <!-- -----------------/Hero---------------------- -->
 
-        <!-- ------------------Services -->
-        <section class="services">
-            <div class="container">
-                <div class="services__inner">
-                    <h2 class="visual-hidden">Company services</h2>
-                    <ul class="services__title">
-                        <li class="services__item">
-                            <div class="services__img">
-                                <svg class="services__svg" width="48" height="48">
-                                    <use href="./images/icons/icon1.svg"></use>
-                                </svg>
-                            </div>
-                            <h3></h3>
-                            <p></p>
-                        </li>
-                        <li class="services__item">
-                            <div class="services__img">
-                                <svg class="services__svg" width="48" height="48">
-                                    <use href="./images/icons/icon2.svg"></use>
-                                </svg>
-                            </div>
-                            <h3></h3>
-                            <p></p>
-                        </li>
-                        <li class="services__item">
-                            <div class="services__img">
-                                <svg class="services__svg" width="48" height="48">
-                                    <use href="./images/icons/icon3.svg"></use>
-                                </svg>
-                            </div>
-                            <h3></h3>
-                            <p></p>
-                        </li>
-                    </ul>
+      <!-- ------------------Services -------------------->
+      <section class="services">
+        <div class="container">
+          <div class="services__inner">
+            <h2 class="visual-hidden">Company services</h2>
+            <ul class="services__title">
+              <li class="services__item">
+                <svg
+                  class="services__svg"
+                  width="48"
+                  height="48"
+                >
+                  <use href="./images/icons/icons.svg#icon-briefcase"></use>
+                </svg>
+                <h3 class="item-block__title">Environmental Consulting</h3>
+                <p class="item-block__text">
+                  We focus on ergonomics and meeting you where you work.
+                </p>
+              </li>
+              <li class="services__item">
+                <svg
+                  class="services__svg"
+                  width="48"
+                  height="48"
+                >
+                  <use href="./images/icons/icons.svg#icon-icon2"></use>
+                </svg>
+                <h3 class="item-block__title">Finance and consultancy</h3>
+                <p class="item-block__text">
+                  Just type what's on your mind and we'll get you there.
+                </p>
+              </li>
+              <li class="services__item active">
+                <svg
+                  class="services__svg"
+                  width="48"
+                  height="48"
+                >
+                  <use href="./images/icons/icons.svg#icon-icon3"></use>
+                </svg>
+
+                <h3 class="item-block__title">Financial Services Consulting</h3>
+                <p class="item-block__text">
+                  the quick fox jumps over the lazy dog
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- ------------------/Services -------------------->
+
+      <!-- ------------------Advantages------------------->
+      <section class="advantages">
+        <div class="container">
+          <div class="title-block">
+            <h2 class="advantages__title title">Designing Better Experience</h2>
+            <p class="advantages__text top-text">
+              Problems trying to resolve the conflict between the two major
+              realms of Classical physics: Newtonian mechanics
+            </p>
+          </div>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <svg
+                class="advantages__svg"
+                width="48px"
+              >
+                <use href="./images/icons/icons.svg#icon-line"></use>
+              </svg>
+              <p class="advantages__item-value">972 +</p>
+              <p class="advantages__item-text">Consumer Products</p>
+            </li>
+            <li class="advantages__item">
+              <svg
+                class="advantages__svg"
+                width="48px"
+              >
+                <use href="./images/icons/icons.svg#icon-stats"></use>
+              </svg>
+              <p class="advantages__item-value">181 +</p>
+              <p class="advantages__item-text">Financial Services</p>
+            </li>
+            <li class="advantages__item">
+              <svg
+                class="advantages__svg"
+                width="48px"
+              >
+                <use href="./images/icons/icons.svg#icon-award"></use>
+              </svg>
+              <p class="advantages__item-value">98%</p>
+              <p class="advantages__item-text">Environmental</p>
+            </li>
+            <li class="advantages__item">
+              <svg
+                class="advantages__svg"
+                width="48px"
+              >
+                <use href="./images/icons/icons.svg#icon-briefcase"></use>
+              </svg>
+              <p class="advantages__item-value">746 +</p>
+              <p class="advantages__item-text">Business & Finance</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- ------------------/Advantages------------------->
+
+      <!-- -------------------Advice---------------------- -->
+      <section class="advice">
+        <div class="container">
+          <div class="advice__top">
+            <h2 class="advice__title title">Practice Advice</h2>
+            <p class="advice__text top-text">
+              Problems trying to resolve the conflict between the two major
+              realms of Classical physics: Newtonian mechanics
+            </p>
+          </div>
+          <ul class="advice__list">
+            <li class="advice__item">
+              <a
+                class="advice__item-link"
+                href=""
+              >
+                <div class="advice__item-inner">
+                  <h3 class="advice__item-title">A single source of truth</h3>
+                  <p class="advice__item-text">
+                    Newton thought that light was made up of particles,
+                  </p>
                 </div>
-            </div>
-        </section>
 
+                <img
+                  class="advice__item-img"
+                  src="./images/advice1.jpg"
+                  alt="A single source of truth photo"
+                />
+              </a>
+            </li>
+            <li class="advice__item">
+              <a
+                class="advice__item-link"
+                href=""
+              >
+                <div class="advice__item-inner">
+                  <h3 class="advice__item-title">Fastest way to organize</h3>
+                  <p class="advice__item-text">
+                    &#8220;Quantum mechanics&#8221; is the description of the
+                    behaviour of matter
+                  </p>
+                </div>
+
+                <img
+                  class="advice__item-img"
+                  src="./images/advice2.jpg"
+                  alt="Fastest way to organize photo"
+                />
+              </a>
+            </li>
+            <li class="advice__item">
+              <a
+                class="advice__item-link"
+                href=""
+              >
+                <div class="advice__item-inner">
+                  <h3 class="advice__item-title">Fastest way to take action</h3>
+                  <p class="advice__item-text">
+                    They describe a universe consisting of bodies moving
+                  </p>
+                </div>
+
+                <img
+                  class="advice__item-img"
+                  src="./images/advice3.jpg"
+                  alt="Fastest way to take action photo"
+                />
+              </a>
+            </li>
+            <li class="advice__item">
+              <a
+                class="advice__item-link"
+                href=""
+              >
+                <div class="advice__item-inner">
+                  <h3 class="advice__item-title">Work better together</h3>
+                  <p class="advice__item-text">
+                    They finally obtained a consistent description of the
+                    behaviour
+                  </p>
+                </div>
+
+                <img
+                  class="advice__item-img"
+                  src="./images/advice4.jpg"
+                  alt="Work better together photo"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- -------------------Advice---------------------- -->
+      <!-- -------------------Who we are------------------ -->
+      <section class="whoweare">
+        <div class="container">
+          <div class="whoweare__top">
+          <h2 class="whoweare__title title">Who We Are</h2>
+          <p class="whoweare__text top-text">
+            Problems trying to resolve the conflict between the two major realms
+            of Classical physics: Newtonian mechanics
+          </p>
+        </div>
+          <div class="whoweare__content">
+            <div class="whoweare__content-left">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/FQcAEnnpZTw?si=XMqGXcieVYOTRjiV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="whoweare__content-right">
+              <h3 class="whoweare__content-title">Most trusted in our field</h3>
+              <p class="whoweare__content-description">
+                Most calendars are designed for teams. Slate is designed for
+                freelancers who want a simple way to plan their schedule.
+              </p>
+              <ul class="whoweare__content-list">
+                <li class="whoweare__content-item">
+                  <svg class="whoweare__content-item-icon" width="32" height="32">
+                    <use href="./images/icons/icons.svg#who-we-are-people"></use>
+                  </svg>
+                  <div class="whoweare__content-block">
+                    <a class="whoweare__content-link" href="">the quick fox jumps over the lazy 
+                      dog</a> 
+                      <p class="whoweare__content-link-description">Things on a very small scale ...</p>
+                  </div>
+                </li>
+                <li class="whoweare__content-item">
+                  <svg class="whoweare__content-item-icon" width="32" height="32">
+                    <use href="./images/icons/icons.svg#who-we-are-speed"></use>
+                  </svg>
+                  <div class="whoweare__content-block">
+                    <a class="whoweare__content-link" href="">the quick fox jumps over the lazy 
+                      dog</a> 
+                      <p class="whoweare__content-link-description">Things on a very small scale ...</p>
+                  </div>
+                </li>
+              </ul>
+    
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- -------------------/Who we are------------------ -->
     </main>
 
     <!-- </div> -->
