@@ -34,7 +34,6 @@
     />
   </head>
   <body>
-    <!-- <div class="wrapper"> -->
     <!------------------------Header------------------ -->
     <header class="header">
       <div class="menu-close"></div>
@@ -46,10 +45,6 @@
             >Relvise</a
           >
           <nav class="header__nav">
-            <div class="mobile-menu-close menu">
-              <button class="menu__close-btn">X</button>
-            </div>
-
             <ul class="header__nav-list is-open">
               <li class="header__nav-item">
                 <a
@@ -80,14 +75,6 @@
                 >
               </li>
             </ul>
-            <button
-              class="menu-open__btn"
-              type="button"
-            >
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
           </nav>
         </div>
       </div>
@@ -136,6 +123,7 @@
             <h2 class="visual-hidden">Company services</h2>
             <ul class="services__title">
               <li class="services__item">
+                <a class="services__item-link" href="">
                 <svg
                   class="services__svg"
                   width="48"
@@ -147,8 +135,10 @@
                 <p class="item-block__text">
                   We focus on ergonomics and meeting you where you work.
                 </p>
+                </a>
               </li>
               <li class="services__item">
+                <a class="services__item-link" href="">
                 <svg
                   class="services__svg"
                   width="48"
@@ -160,8 +150,10 @@
                 <p class="item-block__text">
                   Just type what's on your mind and we'll get you there.
                 </p>
+                </a>
               </li>
               <li class="services__item active">
+                <a class="services__item-link" href="">
                 <svg
                   class="services__svg"
                   width="48"
@@ -174,6 +166,7 @@
                 <p class="item-block__text">
                   the quick fox jumps over the lazy dog
                 </p>
+              </a>
               </li>
             </ul>
           </div>
@@ -407,10 +400,7 @@
       <!-- -------------------/Who we are------------------ -->
 
       <!-- -------------------Clients--------------------- -->
-      <section class="clients">
-        <h2 class="visual-hidden">
-          Our clients
-        </h2>
+      <div class="clients">
         <div class="container">
           <ul class="clients__list">
             <li class="clients__item">
@@ -438,7 +428,7 @@
                   height="59"
                 >
                   <use href="./images/icons/icons.svg#icon-lya"></use>
-                  </svg>
+                </svg>
               </a>
             </li>
             <li class="clients__item">
@@ -462,13 +452,14 @@
               >
                 <svg
                   class="clients__item-svg"
-                  width=103"
+                  width="103"
                   height="42"
                 >
                   <use href="./images/icons/icons.svg#icon-sprite"></use>
                 </svg>
               </a>
             </li>
+
             <li class="clients__item">
               <a
                 class="clients__item-link"
@@ -479,8 +470,9 @@
                   width="104"
                   height="62"
                 >
-                  <use href="./images/icons/icons.svg#icon-aws"></use></svg
-              ></a>
+                  <use href="./images/icons/icons.svg#icon-aws"></use>
+                </svg>
+              </a>
             </li>
             <li class="clients__item">
               <a
@@ -492,28 +484,418 @@
                   width="76"
                   height="72"
                 >
-                  <use href="./images/icons/icons.svg#icon-head"></use></svg
-              ></a>
+                  <use href="./images/icons/icons.svg#icon-head"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- -------------------Clients--------------------- -->
+
+      <!-- -------------------Subscribe---------------------- -->
+      <section class="subscribe">
+        <div class="container">
+          <div class="subscribe__inner">
+            <form class="subscribe__form">
+              <label
+                class="subscribe__form-label"
+                for="subscribe-user-mail"
+                >Subscribe For Latest Newsletter</label
+              >
+              <input
+                class="subscribe__input"
+                type="email"
+                name="subscribe-user-mail"
+                placeholder="Your Email"
+                required
+              />
+              <button
+                class="subscribe__btn"
+                type="submit"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- -------------------/Subscribe---------------------->
+
+      <!-- --------------------Touch-------------------------->
+      <section class="touch">
+        <div class="container">
+          <div class="touch__top">
+            <h2 class="touch__title title">Get In Touch</h2>
+            <p class="touch__text top-text">
+              Problems trying to resolve the conflict between the two major
+              realms of Classical physics: Newtonian mechanics
+            </p>
+          </div>
+          <ul class="touch__list">
+            <li class="touch__item">
+              <svg
+                class="touch__item-icon"
+                width="72"
+                height="72"
+              >
+                <use href="./images/icons/icons.svg#phone-icon"></use>
+              </svg>
+
+              <p class="touch__item-text">georgia.young@example.com</p>
+              <p class="touch__item-text">georgia.young@ple.com</p>
+
+              <h3 class="touch__item-title">Get Support</h3>
+
+              <a
+                class="touch__item-link"
+                href=""
+                target="_blank"
+                >Submit Request</a
+              >
+            </li>
+
+            <li class="touch__item active">
+              <svg
+                class="touch__item-icon"
+                width="72"
+                height="72"
+              >
+                <use href="./images/icons/icons.svg#mark-map-icon"></use>
+              </svg>
+
+              <p class="touch__item-text">georgia.young@example.com</p>
+              <p class="touch__item-text">georgia.young@ple.com</p>
+
+              <h3 class="touch__item-title">Get Support</h3>
+
+              <a
+                class="touch__item-link"
+                href=""
+                target="_blank"
+                >Submit Request</a
+              >
+            </li>
+
+            <li class="touch__item">
+              <svg
+                class="touch__item-icon"
+                width="72"
+                height="72"
+              >
+                <use href="./images/icons/icons.svg#sent-icon"></use>
+              </svg>
+
+              <p class="touch__item-text">georgia.young@example.com</p>
+              <p class="touch__item-text">georgia.young@ple.com</p>
+
+              <h3 class="touch__item-title">Get Support</h3>
+
+              <a
+                class="touch__item-link"
+                href=""
+                target="_blank"
+                >Submit Request</a
+              >
             </li>
           </ul>
         </div>
       </section>
-      <!-- -------------------Clients--------------------- -->
+      <!-- --------------------/Touch------------------------->
 
-      <!-- -------------------Subscribe---------------------- -->
-      <div class="subscribe">
+      <!-- --------------------Contact us------------------ -->
+      <section class="contactus">
         <div class="container">
-          <div class="subscribe__inner">
-            <form class="subscribe__form">
-              <label class="subscribe__form-label" for="subscribe-user-mail">Subscribe For Latest Newsletter</label>
-              <input class="subscribe__input" type="email" name="subscribe-user-mail" placeholder="Your Email" required>
-              <button class="subscribe__btn" type="submit">Subscribe</button>
-            </form>
+          <div class="contactus__inner">
+            <div class="contactus__body">
+              <h2 class="contactus__title">
+                Consulting Agency For Your Business
+              </h2>
+              <p class="contactus__text">
+                the quick fox jumps over the lazy dog
+              </p>
+            </div>
+            <a
+              class="contactus__link"
+              href=""
+              target="_blank"
+              >Contact Us</a
+            >
           </div>
         </div>
-      </div>
-      <!-- -------------------/Subscribe---------------------->
+      </section>
+      <!-- --------------------/Contact us------------------ -->
 
+      <!-- --------------------Footer----------------------- -->
+      <footer class="footer">
+        <div class="footer__body">
+          <div class="container">
+            <div class="footer__inner">
+              <div class="footer__info">
+                <p class="footer__info-title footer__title">Company Info</p>
+                <ul class="footer__info-list">
+                  <li class="footer__info-item footer__item">
+                    <a
+                      class="footer__info-link footer__link"
+                      href=""
+                      >About Us</a
+                    >
+                  </li>
+                  <li class="footer__info-item footer__item">
+                    <a
+                      class="footer__info-link footer__link"
+                      href=""
+                      >Carrier</a
+                    >
+                  </li>
+                  <li class="footer__info-item footer__item">
+                    <a
+                      class="footer__info-link footer__link"
+                      href=""
+                      >We are hiring</a
+                    >
+                  </li>
+                  <li class="footer__info-item footer__item">
+                    <a
+                      class="footer__info-link footer__link"
+                      href=""
+                      >Blog</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__legal">
+                <p class="footer__legal-title footer__title">Legal</p>
+                <ul class="footer__legal-list">
+                  <li class="footer__legal-item footer__item">
+                    <a
+                      class="footer__legal-link footer__link"
+                      href=""
+                      >About Us</a
+                    >
+                  </li>
+                  <li class="footer__legal-item footer__item">
+                    <a
+                      class="footer__legal-link footer__link"
+                      href=""
+                      >Carrier</a
+                    >
+                  </li>
+                  <li class="footer__legal-item footer__item">
+                    <a
+                      class="footer__legal-link footer__link"
+                      href=""
+                      >We are hiring</a
+                    >
+                  </li>
+                  <li class="footer__legal-item footer__item">
+                    <a
+                      class="footer__legal-link footer__link"
+                      href=""
+                      >Blog</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__features">
+                <p class="footer__features-title footer__title">Features</p>
+                <ul class="footer__features-list">
+                  <li class="footer__features-item footer__item">
+                    <a
+                      class="footer__features-link footer__link"
+                      href=""
+                      >Business Marketing</a
+                    >
+                  </li>
+                  <li class="footer__features-item footer__item">
+                    <a
+                      class="footer__features-link footer__link"
+                      href=""
+                      >User Analytic</a
+                    >
+                  </li>
+                  <li class="footer__features-item footer__item">
+                    <a
+                      class="footer__features-link footer__link"
+                      href=""
+                      >Live Chat</a
+                    >
+                  </li>
+                  <li class="footer__features-item footer__item">
+                    <a
+                      class="footer__features-link footer__link"
+                      href=""
+                      >Unlimited Support</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__resources">
+                <p class="footer__resources-title footer__title">Resources</p>
+                <ul class="footer__resources-list">
+                  <li class="footer__resources-item footer__item">
+                    <a
+                      class="footer__resources-link footer__link"
+                      href=""
+                      >IOS & Android</a
+                    >
+                  </li>
+                  <li class="footer__resources-item footer__item">
+                    <a
+                      class="footer__resources-link footer__link"
+                      href=""
+                      >Watch a Demo</a
+                    >
+                  </li>
+                  <li class="footer__resources-item footer__item">
+                    <a
+                      class="footer__resources-link footer__link"
+                      href=""
+                      >Customers</a
+                    >
+                  </li>
+                  <li class="footer__resources-item footer__item">
+                    <a
+                      class="footer__resources-link footer__link"
+                      href=""
+                      >API</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__touch">
+                <p class="footer__touch-title footer__title">Get In Touch</p>
+                <ul class="footer__touch-list">
+                  <li class="footer__touch-item footer__item">
+                    <a
+                      class="footer__touch-link footer__link"
+                      href=""
+                    >
+                      <svg
+                        class="footer__touch-icon"
+                        width="24"
+                        height="24"
+                      >
+                        <use href="./images/icons/icons.svg#phone-icon"></use>
+                      </svg>
+                      (480) 555-0103
+                    </a>
+                  </li>
+                  <li class="footer__touch-item footer__item">
+                    <a
+                      class="footer__touch-link footer__link"
+                      href=""
+                    >
+                      <svg
+                        class="footer__touch-icon"
+                        width="24"
+                        height="30"
+                      >
+                        <use
+                          href="./images/icons/icons.svg#mark-map-icon"
+                        ></use>
+                      </svg>
+                      4517 Washington Ave. Manchester, Kentucky 39495
+                    </a>
+                  </li>
+                  <li class="footer__touch-item footer__item">
+                    <a
+                      class="footer__touch-link footer__link"
+                      href=""
+                    >
+                      <svg
+                        class="footer__touch-icon"
+                        width="24"
+                        height="26"
+                      >
+                        <use href="./images/icons/icons.svg#sent-icon"></use>
+                      </svg>
+                      debra.holt@example.com
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="container">
+            <div class="footer__bottom-inner">
+              <p class="footer__bottom-text">
+                Made With Love By Figmaland All Right Reserved
+              </p>
+              <ul class="footer__social-list">
+                <li class="footer__social-item">
+                  <a
+                    class="footer__social-link"
+                    href=""
+                  >
+                    <svg
+                      class="footer__social-icon"
+                      width="24"
+                      height="24"
+                    >
+                      <use
+                        href="./images/icons/icons.svg#footer-facebook-icon"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a
+                    class="footer__social-link"
+                    href=""
+                  >
+                    <svg
+                      class="footer__social-icon"
+                      width="24"
+                      height="24"
+                    >
+                      <use
+                        href="./images/icons/icons.svg#footer-instagram-icon"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a
+                    class="footer__social-link"
+                    href=""
+                  >
+                    <svg
+                      class="footer__social-icon"
+                      width="24"
+                      height="20"
+                    >
+                      <use
+                        href="./images/icons/icons.svg#footer-twitter-icon"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a
+                    class="footer__social-link"
+                    href=""
+                  >
+                    <svg
+                      class="footer__social-icon"
+                      width="24"
+                      height="18"
+                    >
+                      <use
+                        href="./images/icons/icons.svg#footer-youtube-icon"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- --------------------/Footer----------------------- -->
     </main>
 
     <!-- </div> -->
